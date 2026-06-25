@@ -25,7 +25,15 @@
 
 <br/>
 
-<img src="assets/preview-home.png" alt="홈 화면 미리보기" width="100%" />
+<table align="center">
+  <tr>
+    <td align="center" width="33%"><img src="assets/preview-home.png" alt="홈" width="100%" /><br/><sub><b>🏠 홈</b></sub></td>
+    <td align="center" width="33%"><img src="assets/preview-check.png" alt="자가진단" width="100%" /><br/><sub><b>🩺 자가진단</b></sub></td>
+    <td align="center" width="33%"><img src="assets/preview-right.png" alt="올바르게" width="100%" /><br/><sub><b>⚖️ 올바르게</b></sub></td>
+  </tr>
+</table>
+
+<sub>📱 모든 화면이 스마트폰·태블릿·전자칠판에서 그대로 — 햄버거 메뉴 · 2단 그리드</sub>
 
 </div>
 
@@ -56,28 +64,6 @@
 | 🩺 **자가진단** | 사용 습관 점검 | **20문항 점수 퀴즈 + 결과 밴드** |
 | 🆘 **문제 대응** | 위험 발언·의존·환각 대처 | **STOP** 4단계 행동 수칙 |
 | 🤝 **나의 약속** | 사용 약속문 | **10항목 체크리스트 + 진행률** |
-
-<br/>
-
-## 🖼️ 미리보기
-
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="assets/preview-check.png" alt="자가진단" width="100%" /><br/>
-      <b>🩺 사용 습관 자가진단</b><br/><sub>20문항 · 실시간 합계 · 🟢🟡🔴 결과 밴드</sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="assets/preview-right.png" alt="올바르게 사용" width="100%" /><br/>
-      <b>⚖️ 올바르게 사용해요</b><br/><sub>올바른 vs 잘못된 · 치명적 위험 5가지</sub>
-    </td>
-  </tr>
-</table>
-
-<div align="center">
-  <img src="assets/preview-mobile.png" alt="모바일 반응형" width="270" /><br/>
-  <sub>📱 스마트폰에서도 그대로 — 햄버거 메뉴 · 2단 그리드</sub>
-</div>
 
 <br/>
 
