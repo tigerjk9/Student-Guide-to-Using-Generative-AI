@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OG Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Pretendard', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Pretendard', system-ui, -apple-system, sans-serif;
+    }
+    .canvas {
+      width: 1200px;
+      height: 630px;
+      background-color: #FFFBEB;
+      background-image: radial-gradient(#0000001a 1.2px, transparent 1.2px);
+      background-size: 20px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* 네오브루탈리즘 유틸 */
+    .nb    { border: 3px solid #000; box-shadow: 5px 5px 0 #000; }
+    .nb-lg { border: 3px solid #000; box-shadow: 8px 8px 0 #000; }
+    .nb-sm { border: 2px solid #000; box-shadow: 3px 3px 0 #000; }
+    /* 배경 장식 원형 */
+    .deco-circle {
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+
+    <!-- 배경 장식 원형들 -->
+    <div class="deco-circle" style="width:160px;height:160px;top:-40px;right:220px;background:#FFD93D;opacity:0.35;"></div>
+    <div class="deco-circle" style="width:90px;height:90px;bottom:40px;left:60px;background:#4ECDC4;opacity:0.28;"></div>
+    <div class="deco-circle" style="width:60px;height:60px;top:80px;right:560px;background:#FF6B9D;opacity:0.22;"></div>
+
+    <!-- 메인 콘텐츠 래퍼 -->
+    <div style="padding: 48px 60px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+
+      <!-- 상단 영역: 배지 + 로봇 -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+
+        <!-- 좌상단 배지 -->
+        <div class="nb" style="
+          display: inline-block;
+          background: #4ECDC4;
+          padding: 10px 22px;
+          transform: rotate(-1deg);
+          font-size: 20px;
+          font-weight: 800;
+          color: #000;
+          letter-spacing: -0.3px;
+          line-height: 1;
+        ">
+          학생용 · 디지털 시민성 안내서
+        </div>
+
+        <!-- 우상단 로봇 박스 -->
+        <div class="nb-lg" style="
+          background: #B388FF;
+          width: 130px;
+          height: 130px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 72px;
+          line-height: 1;
+          transform: rotate(2deg);
+          flex-shrink: 0;
+        ">
+          🤖
+        </div>
+      </div>
+
+      <!-- 중앙: 메인 타이틀 + 서브타이틀 + 3개 배지 -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0; margin-top: -16px;">
+
+        <!-- 서브 텍스트 -->
+        <div style="font-size: 18px; font-weight: 700; color: #555; margin-bottom: 14px; letter-spacing: 0.2px;">
+          생성형 AI를 제대로 활용하는 법
+        </div>
+
+        <!-- 메인 타이틀 -->
+        <div style="
+          font-size: 64px;
+          font-weight: 900;
+          color: #000;
+          line-height: 1.1;
+          letter-spacing: -2px;
+          margin-bottom: 36px;
+        ">
+          생성형 인공지능<br/>활용 안내서
+        </div>
+
+        <!-- 3개 키워드 배지 -->
+        <div style="display: flex; gap: 20px; align-items: center;">
+          <!-- 똑똑하게 -->
+          <div class="nb" style="
+            background: #FFD93D;
+            padding: 14px 28px;
+            font-size: 26px;
+            font-weight: 900;
+            color: #000;
+            transform: rotate(-1.5deg);
+            display: inline-block;
+            letter-spacing: -0.5px;
+          ">
+            🧠 똑똑하게
+          </div>
+          <!-- 올바르게 -->
+          <div class="nb" style="
+            background: #FF8C42;
+            padding: 14px 28px;
+            font-size: 26px;
+            font-weight: 900;
+            color: #000;
+            transform: rotate(1deg);
+            display: inline-block;
+            letter-spacing: -0.5px;
+          ">
+            ✅ 올바르게
+          </div>
+          <!-- 안전하게 -->
+          <div class="nb" style="
+            background: #4ECDC4;
+            padding: 14px 28px;
+            font-size: 26px;
+            font-weight: 900;
+            color: #000;
+            transform: rotate(-0.8deg);
+            display: inline-block;
+            letter-spacing: -0.5px;
+          ">
+            🛡️ 안전하게
+          </div>
+        </div>
+      </div>
+
+      <!-- 하단: 구분선 + 크레딧 -->
+      <div>
+        <div style="height: 3px; background: #000; margin-bottom: 18px; width: 100%;"></div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="font-size: 15px; font-weight: 700; color: #444; letter-spacing: 0.1px;">
+            원작 <b style="color:#000">충청남도교육청</b> (2026) &nbsp;·&nbsp; 웹 지도자료 제작·편집 <b style="color:#000">김진관 (닷커넥터)</b>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /메인 콘텐츠 래퍼 -->
+
+  </div><!-- /canvas -->
+</body>
+</html>
